@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="vendors/linericon/style.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
+        <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+        <link rel="stylesheet" href="vendors/animate-css/animate.css">
+        <!-- main css -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+    </head>
+    <body>
+  <!--================Reservation Form Area =================-->
+   <section class="reservation_form_area p_120">
+    <div class="container">
+        <div class="res_form_inner">
+            <div class="form_title">
+                <h2>Edit Your Profile</h2>
+         
+            </div>
+        
+        <form class="reservation_form row" action="profile.php" method="post"  >
+            <div class="form-group col-lg-12">
+                <input  class="form-control" type= "text" name="name" placeholder=" Enter your name" value="<?php echo $data['Name'];?>">
+            </div>
+            <div class="form-group col-lg-12">
+                <input class="form-control" type="email" class="form-control" id="email" name="email" value="<?php echo $data['Email'];?>" placeholder="Email address">
+            </div>
+            <div class="form-group col-lg-12">
+                <input  class="form-control" type="hidden" type= "password" name="oldpassword" placeholder=" Enter your password"  value="<?php echo $data['Password'];?>">
+            </div>
+            <div class="form-group col-lg-12">
+                <input class="form-control" type= "password" name="newpassword" placeholder="leave it empty if you want old password"  >
+            </div>
+            <div class="form-group col-lg-12">
+                <input  class="form-control" type= "mobile" name="mobile" placeholder=" Enter your mobile"  value="<?php echo $data['Mobile'];?>" >
+            </div>
+            <div class="form-group col-lg-12">
+                <input class="form-control" type= "adress" name="address" placeholder=" Enter your address " value="<?php echo $data['Address'];?>">
+            </div>
+            <div  class="form-group col-lg-12">
+             <label >Gender:</label></br>
+            <input  type="radio" name="gender" value="0" > Male<br>
+            <input  type="radio" name="gender" value="1"> Female<br>
+            </div>
+            <div class="form-group col-lg-12">
+                <input class="btn submit_btn" type="submit" value="update" name="subupdate">
+            </div>
+        </form>
+        </div>
+    </div>
+</section>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/stellar.js"></script>
+    <script src="vendors/lightbox/simpleLightbox.min.js"></script>
+    <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+    <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+    <script src="vendors/isotope/isotope-min.js"></script>
+    <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <!-- contact js -->
+    <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/contact.js"></script>
+    <!--gmaps Js-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+    <script src="js/gmaps.min.js"></script>
+    <script src="js/theme.js"></script>
+</body>
+</html>
